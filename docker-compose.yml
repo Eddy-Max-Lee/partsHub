@@ -1,0 +1,12 @@
+services:
+  backend:
+    build: ./backend
+    ports: ["8000:8000"]
+    environment:
+      PARTSHUB_ALLOWED_ORIGINS: http://localhost:8080,http://127.0.0.1:8080
+    volumes:
+      - ./backend/data:/app/data
+  frontend:
+    build: ./frontend
+    ports: ["8080:80"]
+    depends_on: [backend]

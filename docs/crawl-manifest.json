@@ -1,0 +1,101 @@
+{
+  "version": "4.0.0",
+  "seed_url": "https://audi.oempartsonline.com/v-2006-audi-a8-quattro--l--4-2l-v8-gas/ignition--gaskets-and-sealing-systems",
+  "category_diagram": "https://cdn-illustrations.revolutionparts.io/strapr1/83979dcd82cb66fd5ba85cc6b3a32fdc/637bdbbcf8765c0d563f83482641b463.png",
+  "products": [
+    {
+      "part_number": "077-905-115-T",
+      "source_url": "https://audi.oempartsonline.com/oem-parts/audi-ignition-coil-77905115t",
+      "gallery_urls": [
+        "https://cdn-product-images.revolutionparts.io/assets/a0a28c810fca4a87e71e299a35cee734.webp",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/152d91742ac9a998741263feaf382f92/2a6eacdeacd94b57c84eefed3c7c141f.png",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/152d91742ac9a998741263feaf382f92/d159973eaa08d7d0fb1806ab72f4ce4f.png"
+      ]
+    },
+    {
+      "part_number": "077-905-390",
+      "source_url": "https://audi.oempartsonline.com/oem-parts/audi-ignition-coil-mounting-bracket-77905390",
+      "gallery_urls": [
+        "https://cdn-product-images.revolutionparts.io/assets/ff2126b6bc97690800943f44a5c48e98.webp",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/83979dcd82cb66fd5ba85cc6b3a32fdc/5670986b3afe21f180b4ac6a76b81a9f.png",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/83979dcd82cb66fd5ba85cc6b3a32fdc/0c67a93bc937666ac0067f99f8426758.png"
+      ]
+    },
+    {
+      "part_number": "058-905-261-A",
+      "source_url": "https://audi.oempartsonline.com/oem-parts/audi-ignition-coil-mounting-gasket-58905261a",
+      "gallery_urls": [
+        "https://cdn-product-images.revolutionparts.io/assets/9f1f41f7f93595c20366df042c6e8767.webp",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/ecaf23dc2137ce8819973efb3b1558d2/c5d099ab32b508b088aae4bb6b20a31b.png",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/ecaf23dc2137ce8819973efb3b1558d2/bc431d88e4cc1cce537086bef3d43375.png"
+      ]
+    },
+    {
+      "part_number": "101-905-616",
+      "source_url": "https://audi.oempartsonline.com/oem-parts/audi-spark-plug-101905616",
+      "gallery_urls": [
+        "https://cdn-product-images.revolutionparts.io/assets/4ac60afe0e1c2cfaa4e7eb7d54585b40.webp",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/152d91742ac9a998741263feaf382f92/ac40965ab8fef9464640784b6edad618.png",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/152d91742ac9a998741263feaf382f92/73c3d93d393e65f9075b79598a0e725d.png"
+      ]
+    },
+    {
+      "part_number": "101-905-615-A",
+      "source_url": "https://audi.oempartsonline.com/oem-parts/audi-spark-plug-101905615a",
+      "gallery_urls": [
+        "https://cdn-product-images.revolutionparts.io/assets/58eb270dca0466616cdc7d1b10c704f6.webp",
+        "https://cdn-product-images.revolutionparts.io/assets/d4a35e957a5e2d68fc5ab9345e8a4bb7.webp",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/152d91742ac9a998741263feaf382f92/ac40965ab8fef9464640784b6edad618.png"
+      ]
+    },
+    {
+      "part_number": "058-905-161-B",
+      "source_url": "https://audi.oempartsonline.com/oem-parts/audi-sensor-58905161b",
+      "gallery_urls": [
+        "https://cdn-product-images.revolutionparts.io/assets/6983ba796319e0db1b7aa604ef7447c4.webp",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/91a06c0a02ee64a669b2e60f5a44cfc8/e0a1980f1650faafc5eb4f7e5f5e2cd2.png",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/91a06c0a02ee64a669b2e60f5a44cfc8/d807d75731e08793959f3d66094fc312.png"
+      ]
+    },
+    {
+      "part_number": "06B-905-234-A",
+      "source_url": "https://audi.oempartsonline.com/oem-parts/audi-engine-crankshaft-position-sensor-interrupter-6b905234a",
+      "gallery_urls": [
+        "https://cdn-illustrations.revolutionparts.io/strapr1/3855c6b68e461f0fa9ae106e76257717/8652f97089289f7b027bc1918dc20e61.png",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/3855c6b68e461f0fa9ae106e76257717/fe6d8826dc05d47718cf01cd2b40d273.png"
+      ]
+    },
+    {
+      "part_number": "4E0-910-560-PX",
+      "source_url": "https://audi.oempartsonline.com/oem-parts/audi-engine-control-module-ecm-4e0910560px",
+      "gallery_urls": [
+        "https://cdn-illustrations.revolutionparts.io/strapr1/83979dcd82cb66fd5ba85cc6b3a32fdc/7cd08ce059d667c8abad56ad07ec9027.png",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/83979dcd82cb66fd5ba85cc6b3a32fdc/caa4d459c33cdb1a84f8ab0c55811bb8.png"
+      ]
+    },
+    {
+      "part_number": "4E0-907-577-A",
+      "source_url": "https://audi.oempartsonline.com/oem-parts/audi-engine-control-module-ecm-cover-4e0907577a",
+      "gallery_urls": [
+        "https://cdn-illustrations.revolutionparts.io/strapr1/83979dcd82cb66fd5ba85cc6b3a32fdc/d6d85e0b096c7f2c59c814ff9d744e7b.png",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/83979dcd82cb66fd5ba85cc6b3a32fdc/5306e41b6d1c7505e24ca964b9fda4fe.png"
+      ]
+    },
+    {
+      "part_number": "077-905-377-G",
+      "source_url": "https://audi.oempartsonline.com/oem-parts/audi-knock-sensor-77905377g",
+      "gallery_urls": [
+        "https://cdn-illustrations.revolutionparts.io/strapr1/4e3a29efc7969aa41641a471754509df/f353aa739756afb1fb55852627bc275f.png",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/4e3a29efc7969aa41641a471754509df/c1a0bea229d8b792615fdd56eb087153.png"
+      ]
+    },
+    {
+      "part_number": "077-905-377-F",
+      "source_url": "https://audi.oempartsonline.com/oem-parts/audi-knock-sensor-77905377f",
+      "gallery_urls": [
+        "https://cdn-illustrations.revolutionparts.io/strapr1/83979dcd82cb66fd5ba85cc6b3a32fdc/f1aa0d4961880591071bcc63b7f05f45.png",
+        "https://cdn-illustrations.revolutionparts.io/strapr1/83979dcd82cb66fd5ba85cc6b3a32fdc/0ef13e78121660c7d3f471e1a002edde.png"
+      ]
+    }
+  ]
+}
