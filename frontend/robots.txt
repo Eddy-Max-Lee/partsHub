@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /pf/partshub/
+Disallow: /pf/partshub/admin.html
+Disallow: /pf/partshub/api/
+Disallow: /pf/partshub/vin/
+Disallow: /pf/partshub/garage/
+Disallow: /pf/partshub/?q=
+Sitemap: https://panoviz.xyz/pf/partshub/sitemap.xml

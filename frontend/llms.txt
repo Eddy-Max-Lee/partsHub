@@ -1,0 +1,17 @@
+# PartsHub 台灣站
+
+PartsHub 是汽車零件料號、商品與初步適配資料平台。公開資料以繁體中文呈現，價格為示範 TWD 資料。
+
+## 公開入口
+- 零件商城: https://panoviz.xyz/pf/partshub/
+- 知識庫: https://panoviz.xyz/pf/partshub/knowledge.html
+- API 文件: https://panoviz.xyz/pf/partshub/api/v1/docs
+- API OpenAPI: https://panoviz.xyz/pf/partshub/api/v1/openapi.json
+
+## 可信度
+資料會標示 source_type、verification_status 與 confidence_score。`likely`、`unverified`、`demo` 不代表保證適用；VIN 服務尚未串接授權解碼 provider。
+
+## 限制與授權
+資料僅供初步篩選，購買前應核對 VIN、生產日期、引擎碼、選配碼與原車料號。原始圖片依來源網站權利使用，PartsHub 不主張未授權重新發布。
+
+請勿引用或索引後台、購物車、VIN 結果與個人 Garage 內容。

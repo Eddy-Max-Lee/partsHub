@@ -1,4 +1,4 @@
-# PartsHub v4.0.0
+# PartsHub v4.1.0
 
 台灣版 OEM 汽車零件資料平台 Demo。這一版完成真正的前後端解耦、繁體中文介面、TWD 計價，以及商品詳情的原始頁面相簿／零件分解圖。
 
@@ -38,6 +38,13 @@ frontend SPA ← REST API ← FastAPI backend
 docker compose up --build
 ```
 
+v4.1.0 啟動時會自動執行可重複的 domain migration，保留既有商城表並建立 Part、Vehicle、適配、料號別名、替代歷史、知識文章、OBD 與供應商報價資料表。也可手動執行：
+
+```bash
+cd backend
+python -c "from pathlib import Path; from app.migration import migrate; from app.config import DB_PATH; migrate(DB_PATH)"
+```
+
 - 前台：`http://localhost:8080`
 - 後台資料檢視：`http://localhost:8080/admin.html`
 - API：`http://localhost:8000/api/v1`
@@ -66,6 +73,24 @@ python -m http.server 8080
 - `GET /api/v1/admin/products`
 - `GET /api/v1/admin/source-pages`
 - `GET /api/v1/admin/orders`
+
+v4.1.0 新增公開查詢 API：
+
+- `GET /api/v1/search?q=料號或關鍵字`
+- `GET /api/v1/parts/{normalizedPartNumber}`
+- `GET /api/v1/parts/{normalizedPartNumber}/fitments`
+- `GET /api/v1/parts/{normalizedPartNumber}/alternatives`
+- `GET /api/v1/parts/{normalizedPartNumber}/supersessions`
+- `GET /api/v1/vehicles`、`GET /api/v1/vehicles/{id}/parts`
+- `GET /api/v1/obd/{code}`、`GET /api/v1/knowledge/{slug}`
+- `POST /api/v1/vin/decode`（目前只做格式驗證與遮蔽，尚未串接授權 VIN provider）
+- OpenAPI：`/api/v1/docs`、`/api/v1/openapi.json`
+
+新 domain API 使用 `{data, meta, errors}` 格式，`meta` 會帶來源、驗證狀態、信心分數與 API 版本。`likely`、`unverified` 與 `demo` 不代表保證適用。
+
+公開 SEO 輔助檔案：`robots.txt`、`sitemap.xml`、`llms.txt`、`llms-full.txt`；資料政策頁：`about.html`。
+
+仍未完成：登入與後台權限/CRUD、正式 VIN 授權 provider、SSR/SSG 的逐零件永久 URL、正式支付/物流/即時庫存、完整文章編輯與審核工作流。不得將目前 demo 資料或來源圖片宣稱為原廠授權或保證適配。
 
 ## 爬蟲
 

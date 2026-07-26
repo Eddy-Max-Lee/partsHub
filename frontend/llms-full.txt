@@ -1,0 +1,15 @@
+# PartsHub 完整公開資料說明
+
+## 查詢方式
+可使用前台料號搜尋，或呼叫 `GET /api/v1/search?q=料號`。零件詳情使用 `GET /api/v1/parts/{normalizedPartNumber}`，適配使用 `/fitments`，替代料號使用 `/alternatives`。
+
+## 驗證狀態
+- verified: 有人工或明確來源確認
+- unverified: 已匯入但尚未人工確認
+- demo: 展示用資料，不可視為官方資料
+
+## 信心等級
+0 至 1 的數值只代表目前資料判斷強度，不是法律或適配保證。
+
+## VIN
+`POST /api/v1/vin/decode` 目前只驗證格式並回傳遮蔽 VIN；未接入授權 VIN provider，請使用手動車型選擇。

@@ -7,3 +7,7 @@ class CartItem(BaseModel):
 
 class OrderCreate(BaseModel):
     items: list[CartItem]
+
+
+class VINDecodeRequest(BaseModel):
+    vin: str = Field(min_length=17, max_length=24)

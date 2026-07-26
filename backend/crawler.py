@@ -13,7 +13,7 @@ from urllib.robotparser import RobotFileParser
 import httpx
 from bs4 import BeautifulSoup
 
-USER_AGENT="PartsHubCrawler/4.0 (+https://github.com/Eddy-Max-Lee/partsHub)"
+USER_AGENT="PartsHubCrawler/4.1 (+https://github.com/Eddy-Max-Lee/partsHub)"
 IMAGE_HOSTS={"cdn-product-images.revolutionparts.io","cdn-illustrations.revolutionparts.io"}
 
 def now(): return datetime.now(timezone.utc).isoformat()
