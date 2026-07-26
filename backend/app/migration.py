@@ -116,7 +116,7 @@ def seed_demo(con: sqlite3.Connection) -> None:
         con.execute(
             """INSERT INTO parts(product_id, normalized_part_number, display_part_number, part_name_zh, part_name_en,
                category_id, description_short, status, source_type, verification_status, confidence_score, created_at, updated_at)
-               VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(product_id) DO UPDATE SET updated_at=excluded.updated_at""",
+               VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(product_id) DO NOTHING""",
             (product[0], normalized, product[1], product[2], product[3], product[4] or "未分類", product[5] or "",
              "published", "crawled", "unverified", 0.5, timestamp, timestamp),
         )
@@ -189,7 +189,9 @@ def migrate(db_path: Path) -> None:
     con.execute("""DELETE FROM product_offers WHERE id NOT IN
         (SELECT MIN(id) FROM product_offers GROUP BY part_id, supplier_id, COALESCE(sku, ''))""")
     con.execute("CREATE UNIQUE INDEX IF NOT EXISTS uq_offer_part_supplier_sku ON product_offers(part_id, supplier_id, sku)")
-    seed_demo(con)
-    con.execute("INSERT OR REPLACE INTO schema_migrations(version, applied_at) VALUES('001-domain-foundation', ?)", (now(),))
+    migration_exists = con.execute("SELECT 1 FROM schema_migrations WHERE version='001-domain-foundation'").fetchone()
+    if not migration_exists:
+        seed_demo(con)
+        con.execute("INSERT INTO schema_migrations(version, applied_at) VALUES('001-domain-foundation', ?)", (now(),))
     con.commit()
     con.close()
